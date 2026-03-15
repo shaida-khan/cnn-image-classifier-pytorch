@@ -71,6 +71,11 @@ Example output:
 
 Test Accuracy: ~90%
 
+## Training Results
+
+The CNN training cost and validation accuracy across epochs.
+
+![Training Results](training_results.png)
 ---
 
 ## Repository Structure
