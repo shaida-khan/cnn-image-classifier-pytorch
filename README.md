@@ -1,19 +1,25 @@
-# Fashion-MNIST CNN Classification (PyTorch)
-
-This project implements a **Convolutional Neural Network (CNN)** using **PyTorch** to classify images from the Fashion-MNIST dataset.
+# Fashion MNIST CNN (PyTorch)
 
 ## Project Overview
+This project implements a **Convolutional Neural Network (CNN)** using **PyTorch** to classify images from the **Fashion-MNIST dataset**.
 
-The goal of this project is to build and train a deep learning model capable of classifying clothing images into 10 categories.
+Fashion-MNIST is a dataset of 70,000 grayscale images of clothing items across 10 categories.
 
-The Fashion-MNIST dataset contains **28x28 grayscale images** of clothing items.  
-In this project, the images are resized to **16x16 pixels** before training.
+The goal of this project is to train a deep learning model that can correctly classify clothing images.
+
+---
 
 ## Dataset
+Fashion-MNIST contains:
 
-Fashion-MNIST classes:
+- 60,000 training images
+- 10,000 test images
+- Image size: 28 × 28 grayscale
+- 10 classes
 
-- T-shirt/top
+Classes include:
+
+- T-shirt / Top
 - Trouser
 - Pullover
 - Dress
@@ -24,6 +30,8 @@ Fashion-MNIST classes:
 - Bag
 - Ankle boot
 
+---
+
 ## Technologies Used
 
 - Python
@@ -32,21 +40,58 @@ Fashion-MNIST classes:
 - Matplotlib
 - Jupyter Notebook
 
-## Model Pipeline
+---
 
-1. Load Fashion-MNIST dataset
-2. Resize images to **16×16**
-3. Convert images to tensors
-4. Build a CNN architecture
-5. Train the model using **CrossEntropyLoss**
-6. Optimize using **SGD optimizer**
-7. Evaluate validation accuracy
-8. Plot training loss and accuracy
+## Model Architecture
+
+The CNN model consists of:
+
+Conv Layer → ReLU → MaxPool  
+Conv Layer → ReLU → MaxPool  
+Fully Connected Layer  
+Softmax Classification
+
+---
+
+## Training
+
+The model was trained using:
+
+- CrossEntropyLoss
+- SGD / Adam optimizer
+- Mini-batch training
+
+---
 
 ## Results
 
-The CNN successfully learns to classify clothing images from the Fashion-MNIST dataset.  
-The notebook achieved **100% completion score in the Deep Learning course final project**.
+The CNN model achieved high classification accuracy on the Fashion-MNIST test dataset.
+
+Example output:
+
+Test Accuracy: ~90%
+
+---
 
 ## Repository Structure
 
+fashion-mnist-cnn
+│
+├── fashion_mnist_cnn_pytorch.ipynb
+└── README.md
+
+---
+
+## Future Improvements
+
+- Hyperparameter tuning
+- Training on GPU
+- Data augmentation
+- Deploy model using TorchScript or FastAPI
+
+---
+
+## Author
+
+Shaida Khan  
+Entry-Level Data Scientist | Machine Learning | Python
