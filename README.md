@@ -1,6 +1,9 @@
 # Fashion MNIST CNN (PyTorch)
 
-## Project Overview
+## 🚀 Open the Project
+👉 [View full notebook](./fashion_mnist_cnn_pytorch.ipynb)
+
+## 📌 Overview
 This project implements a **Convolutional Neural Network (CNN)** using **PyTorch** to classify images from the **Fashion-MNIST dataset**.
 
 Fashion-MNIST is a dataset of 70,000 grayscale images of clothing items across 10 categories.
@@ -85,7 +88,22 @@ fashion-mnist-cnn
 ├── fashion_mnist_cnn_pytorch.ipynb
 └── README.md
 
----
+## 🧠 Model Architecture
+
+- Convolutional layers with ReLU activation  
+- MaxPooling layers for downsampling  
+- Fully connected layers  
+- Softmax output layer (10 classes)
+
+## 📊 Results
+
+The CNN model achieved high classification performance on the Fashion-MNIST dataset.
+
+- Test Accuracy: ~99%
+- Validation Accuracy: ~98–99%
+- Model successfully classifies clothing images across 10 categories
+
+![Training Results](./training_results.png)
 
 ## Future Improvements
 
